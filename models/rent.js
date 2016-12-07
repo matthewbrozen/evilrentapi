@@ -3,7 +3,7 @@ var mongoose = require('mongoose')
 var rentSchema = mongoose.Schema({
   amount: Number,
   address: String,
-  expiration: Date,
+  apartment: String,
   utilities:String,
   name: String,
   phone: Number,
