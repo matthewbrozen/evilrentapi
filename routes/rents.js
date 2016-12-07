@@ -3,7 +3,7 @@ var express = require('express')
 var router = express.Router()
 
 // requirements
-var emailsController = require('../controllers/emails')
+var rentsController = require('../controllers/rents')
 
 // cors header
 router.use(function (req, res, next) {
@@ -15,7 +15,7 @@ router.use(function (req, res, next) {
 
 
 // POST one report
-router.post('/', emailsController.sendOne)
+router.post('/', rentsController.addOne)
 
 
 // export router
