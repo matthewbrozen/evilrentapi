@@ -8,7 +8,7 @@ function addOne (req, res, next) {
   var rent = new Rent()
   rent.amount = req.body.amount
   rent.address = req.body.address
-  rent.expiration = req.body.expiration
+  rent.apartment = req.body.apartment
   rent.utilities = req.body.utilities
   rent.name = req.body.name
   rent.phone= req.body.phone
