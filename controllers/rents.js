@@ -14,8 +14,8 @@ function addOne (req, res, next) {
   rent.phone= req.body.phone
   rent.email = req.body.email
 
-  var rsoincrease = (rent.email*.04)
-
+  var num = (rent.email*.04)
+  var rsoincrease = num.toFixed(2);
 
   rent.save()
     .then(function (newRent) {
