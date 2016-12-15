@@ -6,7 +6,7 @@ var rentSchema = mongoose.Schema({
   apartment: String,
   utilities:String,
   name: String,
-  phone: Number,
+  phone: String,
   email: String
 
 })
